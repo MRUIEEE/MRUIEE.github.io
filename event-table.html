@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" style class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" >
+<html lang="en">
 
-<head><style>.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
-</style><style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
-</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
-</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
-</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
-</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TECH SET GO</title>
+    <title>Event Schedule</title>
+    <meta name="author" content="iThemesLab">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -48,10 +43,12 @@
 
 
     <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
+
 <body>
     <!--Preloder-->
     <div class='loader'>
@@ -66,7 +63,7 @@
     <!--Main Container Start Here-->
     <div class="main-container">
         <!--Header Start Here-->
-        <header class="header base-style-2">
+        <header class="header base-style-2 white-color">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2">
@@ -83,8 +80,8 @@
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active dropdown">
-                                        <a class="nav-link " href="#">Home</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link " href="index.html">Home</a>
                                       </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link " href="About.html">About us</a>
@@ -95,7 +92,7 @@
                                     </li>
                                     
                                     
-                                    <li class="nav-item dropdown">
+                                    <li class="nav-item active dropdown">
                                         <a class="nav-link " href="event-table.html">Events</a>
                                         
                                     </li>
@@ -122,166 +119,34 @@
         </header>
         <!--Header End Here-->
 
-        <!--Hero Banner Area Start Here-->
-        <div class="hero-banner-area home-2 hero-bg-2 parallax no-attm">
+        <!--About Us Area Start Here-->
+        <div class="about-us-area pad-head bg-about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="banner-content">
-                            <div class="upcoming">
-                                <br>
-                                <br>
-                                <span class="is-countdown"></span>
-                                
-
-                                <div data-countdown="2019/08/17">
-                                    <span class="cdown days">
-                                        <span class="time-count">0</span>
-                                         <p>Days</p>
-                                     </span>
-                                    <span class="cdown hour">
-                                        <span class="time-count">0</span> 
-                                        <p>Hours</p>
-                                    </span>
-                                     <span class="cdown minutes">
-                                        <span class="time-count">00</span>
-                                         <p>Minutes</p>
-                                     </span>
-                                    <span class="cdown second"> 
-                                        <span>
-                                            <span class="time-count">00</span> 
-                                            <p>Seconds</p>
-
-                                        </span>
-                                    </span>
-                                </div>
+                        <div class="about-content">
+                            <div class="section-title text-center">
+                                <h2>Event Schedule</h2>
                             </div>
-                            <h3>Days To Go</h3>
-
-                            <br>
-                            <br>
-                        </div>
-                  
-                    </div>
-                    <!-- /col end-->
-                </div>
-                <!-- /row end-->
-                <div class="row">
-                    <div class="col-rg-2">
-                        
-                    </div>
-
-                </div>
-            </div>
-            <!-- /container end-->
-
-        </div>
-        <!--Hero Banner Area End Here-->
-
-        <!--Feature Area Start Here-->
-       <!--  <div class="feature-area pad100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="feature-box">
-                            <div class="sinlge-feature xs-mb30">
-                                <div class="feature-icon">
-                                    <img src="assets/img/feature/1.png" alt="">
-                                </div>
-                                <div class="feature-content">
-                                    <a href="#">
-                                        <h3>General Information</h3>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amet, impediii reprehe ndunt est ei, sit ea alii omnis. Prima semper
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sinlge-feature xs-mb30">
-                                <div class="feature-icon">
-                                    <img src="assets/img/feature/2.png" alt="">
-                                </div>
-                                <div class="feature-content">
-                                    <a href="#">
-                                        <h3>Selection Process</h3>
-                                    </a>
-                                    <p>Participants will be shortlisted on the basis of their Devfolio profiles and github handles.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sinlge-feature">
-                                <div class="feature-icon">
-                                    <img src="assets/img/feature/3.png" alt="">
-                                </div>
-                                <div class="feature-content">
-                                    <a href="#">
-                                        <h3>Activities and Structure</h3>
-                                    </a>
-                                    <p>There would be various Activices during and before the main Event.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        --> 
-
-        <div class="feature-area pad100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="feature-box">
-                            <div class="sinlge-feature xs-mb30">
-                                <div class="feature-icon">
-                                    <img src="assets/img/feature/1.png" alt="">
-                                </div>
-                                <div class="feature-content">
-                                    <a href="#">
-                                        <h3>General Information</h3>
-                                    </a>
-                                    <p>Tech Set GO is an IEEE week organised by IEEE student branch MRU , we are going to conduct more than 5 events
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sinlge-feature xs-mb30">
-                                <div class="feature-icon">
-                                    <img src="assets/img/feature/2.png" alt="">
-                                </div>
-                                <div class="feature-content">
-                                    <a href="#">
-                                        <h3>Selection Process</h3>
-                                    </a>
-                                    <p>Participants will be shortlisted on the basis of their Devfolio profiles or github handles.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sinlge-feature">
-                                <div class="feature-icon">
-                                    <img src="assets/img/feature/3.png" alt="">
-                                </div>
-                                <div class="feature-content">
-                                    <a href="#">
-                                        <h3>Activities and Structure</h3>
-                                    </a>
-                                    <p>There would be more than 5 Activities including the Hackathon.
-                                    </p>
-                                </div>
-                            </div>
+                            <ol class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li>|</li>
+                                <li>Event Schedule</li>
+                            </ol>
                         </div>
                     </div>
-                    <!-- /col end-->
+                    <!-- /col-->
                 </div>
-                <!-- /row end-->
+                <!-- /row-->
             </div>
-            <!-- /container end-->
+            <!--/ container-->
         </div>
-
-        <!--Feature Area End Here-->
+        <!--About Us Area End Here-->
 
         <!--Event Schedule Area Start Here-->
         <div class="event-schedule-area-two bg-color pad100">
-           <div class="container">
+ <div class="event-schedule-area-two bg-color pad100">
+             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center">
@@ -513,7 +378,7 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">Date</th>
-                                                <th scope="col"></th>
+                                                <th ></th>
                                                 <th scope="col">Session</th>
                                                 <th scope="col">Venue</th>
                                                 <th scope="col">More Details</th>
@@ -529,7 +394,7 @@
                                                 </th>
                                                 <td>
                                                     <div class="event-img">
-                                                        <img src="assets/img/team/registration.jpg" alt="">
+                                                         <img src="assets/img/team/registration.jpg" alt=""> 
                                                     </div>
                                                 </td>
                                                 <td>
@@ -563,7 +428,7 @@
                                                 <td>
                                                     <div class="event-img">
                                                         <img src="assets/img/team/guest.jpg" alt="">
-                                                    </div>
+                                                    </div> 
                                                 </td>
                                                 <td>
                                                     <div class="event-wrap">
@@ -596,7 +461,7 @@
                                                 <td>
                                                     <div class="event-img">
                                                         <img src="assets/img/team/vigyanthon.jpg" alt="">
-                                                    </div>
+                                                    </div> 
                                                 </td>
                                                 <td>
                                                     <div class="event-wrap">
@@ -781,386 +646,12 @@
                 </div>
                 <!-- /row end-->
             </div>
-            
-            <!-- /container end-->
-        </div>
+                     <!-- /container end-->
         </div>
         <!--Event Schedule Area End Here-->
-
-        <!--Our team Area Start Here-->
-        <div class="whos-speaking-area pad100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <div class="title-text mb50">
-                                <h2>Our Team</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                </div>
-                <!-- /.row  end-->
-                <div class="row mb50">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                        <div class="speakers xs-mb30">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/tridev.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                                 <a href="#">
-                                    <h3>Mr. Tridev Nath Tripathi</h3>
-                                </a>
-                                <p> Branch Mentor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                        <div class="speakers xs-mb30">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/ujjwal.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                              <a href="#">
-                                    <h3>Mr. Ujjwal Gaur </h3>
-                                </a>
-                                <p>Chairperson </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                        <div class="speakers xs-mb30">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/bhavya.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                               <a href="#">
-                                    <h3>Mr. Bhavya Satija</h3>
-                                </a>
-                                <p>Vice Chairperson (Gen)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-12">
-                        <div class="speakers">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/niharika.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                                <a href="#">
-                                    <h3>Ms. Niharika Yadav</h3>
-                                </a>
-                                <p>Vice Chairperson (PR)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                </div>
-                <!-- /row end-->
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                        <div class="speakers xs-mb30">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/parul.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                                 <a href="#">
-                                    <h3>Ms. Parul Taneja</h3>
-                                </a>
-                                <p> General Secretary, IEEE MRU and Young Professionals & WIE Coordinator, IEEE India Council Student Coordination Team (2019-20)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                        <div class="speakers xs-mb30">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/yukti.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                              <a href="#">
-                                    <h3>Ms. Yukti Arora </h3>
-                                </a>
-                                <p>WIE Chairperson</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
-                        <div class="speakers xs-mb30">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/anirudh.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                               <a href="#">
-                                    <h3>Mr. Anirudh Parashar</h3>
-                                </a>
-                                <p>WIE Vice Chairperson </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-12">
-                        <div class="speakers">
-                            <div class="spk-img">
-                                <img class="img-fluid" src="assets/img/team/himanshu.jpg" alt="">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-life-ring"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="spk-info">
-                                <a href="#">
-                                    <h3>Mr. Himanshu Ahuja</h3>
-                                </a>
-                                <p>WIE General Secretary</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                </div>
-                <!-- /row end-->
-               
-
-
-            </div>
-            <!-- /container end-->
-        </div>
-        <!--Whos Speaking Area End Here-->
-
-
-<!--Counter Up Area Start Here-->
-        <div class="counter-up-area pad100 bg-counter parallax">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                        <div class="single-counter xs-mb40">
-                            <div class="count-content">
-                                <span class="count">20</span>
-                                <p>Colleges</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                        <div class="single-counter xs-mb40">
-                            <div class="count-content">
-                                <span class="count">6</span>
-                                <p>Events</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                        <div class="single-counter xs-mb40">
-                            <div class="count-content">
-                                <span class="count">15</span>
-                                <p>Speakers</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <div class="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
-                        <div class="single-counter">
-                            <div class="count-content">
-                                <span class="count">1</span>
-                                <p>Sponsors</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                </div>
-                <!-- /row end-->
-            </div>
-            <!-- /container end-->
-        </div>
-        
-
-        <!--Our Sponsers Area Start Here-->
-      <!--   <div class="our-sponsers-area-tow pad100 bg-color">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <div class="title-text mb50 xs-mb40">
-                                <h2>Our Sponsers</h2>
-                                <p>Ocurreret temporibus nec ad. Vim dolor appetere percipitur te. Illud noluisse petentium at mea,<br>pro vide eloquentiam ex, ne eum sumo aperiam. Hinc disputando an qui, no sed.</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            
-                <div class="row">
-                    <div class="sponsers-active owl-carousel owl-theme">
-                        <div class="col-lg-12">
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/10.png" alt=""></a>
-                            </div>
-                            <div class="boder"></div>
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/12.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/11.png" alt=""></a>
-                            </div>
-                            <div class="boder"></div>
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/15.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-sponsers">
-                                <a href="https://devfolio.co/" target="_blank"><img src="assets/img/sponsers/devfolio.png" alt=""></a>
-                            </div>
-                            <div class="boder"></div>
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/16.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/13.png" alt=""></a>
-                            </div>
-                            <div class="boder"></div>
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/17.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/13.png" alt=""></a>
-                            </div>
-                            <div class="boder"></div>
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/10.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/15.png" alt=""></a>
-                            </div>
-                            <div class="boder"></div>
-                            <div class="single-sponsers">
-                                <a href="#"><img src="assets/img/sponsers/10.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        </div>
-       -->  <!--Our Sponsers Area End Here-->
-
-        <!--Counter Up Area End Here-->
-
-        <!--Our Blog Area Start Here-->
-        
-        <!--Contact Us Area Start Here-->
-        <div class="contact-us-area-two pad-top100 bg-contact parallax no-attm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <div class="title-text mb50">
-                                <h2>Contact Us</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                </div>
-                <!-- /row end-->
-                <div class="row">
-                    <div class="col-lg-4 pr-0">
-                        <div class="inner-box">
-                            <form action="query.php">
-                                <div class="row">
-                                    <div class="col-lg-12 mb50">
-                                        <input class="form-control" type="text" placeholder="Name" name="name" required>
-                                    </div>
-                                    <div class="col-lg-12 mb50">
-                                        <input class="form-control" type="email" placeholder="Email"  name="email" required>
-                                    </div>
-                                    <div class="col-lg-12 mb50">
-                                        <input class="form-control" type="text" placeholder="Subject"  name="subject" required>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <textarea class="form-control" name="message" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <button class="btn-primary" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /col end-->
-                    <iframe class="col-lg-8 pl-0"
-                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3507.9683752377455!2d77.2815587!3d28.4503697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0ab84540def%3A0x6dd05544d64ec815!2sManav+Rachna+University!5e0!3m2!1sen!2sin!4v1559734439687!5m2!1sen!2sin" width=800 height=470 frameborder="0" style="border:0" allowfullscreen></iframe>    </div>
-                        <!--Google Map End Here-->
-                       
-                              
-                    <!-- /col end-->
-                </div>
-                <!-- /row end-->
-            </div>
-            <!-- /container end-->
-        </div>
-        <!--Contact Us Area End Here-->
-         <div class="faq-area pad-top100 bg-contact parallax no-attm">
-         
-         </div>
+    </div>
         <!--Footer Area Start Here-->
-        <div class="footer-area bg-footer parallax ptb">
+      <div class="footer-area bg-footer parallax ptb">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
@@ -1204,14 +695,13 @@
             </div>
             <!-- /container end-->
         </div>
+        
         <!--Footer Area End Here-->
     </div>
     <!--Main Container End Here-->
     <!--All Js Here-->
-    <!-- Google Map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7S3LMIFW-TveFw8Rr6ue1fNv7yn_mAUc"></script>
 
-  <!-- jquery latest version -->
+    <!-- jquery latest version -->
     <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
     <!--Migrate Js-->
     <script src="assets/js/vendor/jquery-migrate.js"></script>
@@ -1229,8 +719,6 @@
     <script src="assets/js/vendor/lightbox.js"></script>
     <!--Appear Js-->
     <script src="assets/js/vendor/jquery.appear.js"></script>
-    <!--Countdown Js-->
-    <script src="assets/js/vendor/countdown.js"></script>
     <!--Jquery Ui Js-->
     <script src="assets/js/vendor/jquery-ui.min.js"></script>
     <!--Wow Js-->
