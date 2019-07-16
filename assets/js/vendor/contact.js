@@ -22,9 +22,10 @@
 
 
         $.ajax({
-            type: "POST",
-            url: "assets/php/contact-form.php",
-            data: "name=" + inputName + "&email=" + inputEmail + "&subject=" + inputSubject + "&message=" + inputMessage,
+            type: 'POST',
+            url: "https://ptrackr.000webhostapp.com/ieee/email.php",
+            data: "name=" + inputName + "&email=" + inputEmail + "&subject=" + inputSubject + "&message=" + inputMessage + "",
+            crossDomain: true,
             cache: true,
             success : function(text){
                 if (text == "success"){
@@ -39,7 +40,7 @@
 
     function formSuccess(){
         $("#contact-form")[0].reset();
-        submitMSG(true, "Message Submitted!")
+        submitMSG(true, "Message Submitted!");
     }
 
     function formError(){

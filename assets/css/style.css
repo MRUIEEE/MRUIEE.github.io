@@ -1336,8 +1336,8 @@ a {
   -o-transition: all 0.4s;
   transition: all 0.4s; }
   .pricing-tables-area .pricing-box:hover {
-    -webkit-box-shadow: 0 0 6px 5px #ddd;
-    box-shadow: 0 0 6px 5px #ddd;
+    -webkit-box-shadow: 0 0 12px 5px #ddd;
+    box-shadow: 0 0 12px 5px #ddd;
     border: 1px solid #fff;
     z-index: 99;
     position: relative; }
